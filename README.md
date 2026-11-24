@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" width="100%" alt="CosmoDz: software that keeps working when things go wrong">
+  <img src="assets/banner-light.svg" width="100%" alt="Freesialuo: software that keeps working when things go wrong">
 </picture>
 
 **English** · [简体中文](README.zh-CN.md)
 
-Hi, I'm CosmoDz, a third-year university student in North America.
+Hi, I'm Freesialuo, a third-year university student in North America.
 
 I build software that has to keep working when things go wrong: self-hosted services in Rust and Go, and flight-assist mods for games in C#.
 
@@ -92,7 +92,7 @@ Secrets are write-only in the admin console. 80+ Go tests cover the OAuth2 flow,
 </td>
 <td valign="top">
 
-A command-line tool and Docker service that resets monthly subscription quotas on 88code on a schedule, for one account or many.
+A command-line tool and Docker service that reset monthly subscription quotas on 88code on a schedule, for one account or many. 88code has since shut down, so the repository stays as a sample of a small scheduled service.
 
 My most starred project: 18 stars, 6 forks and 10 releases, with binaries and a public container image.
 

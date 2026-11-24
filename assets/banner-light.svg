@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="banner-title banner-desc">
-  <title id="banner-title">CosmoDz: software that keeps working when things go wrong</title>
+  <title id="banner-title">Freesialuo: software that keeps working when things go wrong</title>
   <desc id="banner-desc">A glide path descends through five approach rings, flares, and touches down on a timeline. The rollout line underlines the name.</desc>
   <style>
     :root {
@@ -59,7 +59,7 @@
   <circle class="papi red" style="animation-delay: 2.3s" cx="486" cy="259" r="4"/>
   <circle class="papi red" style="animation-delay: 2.4s" cx="500" cy="259" r="4"/>
 
-  <text class="name" x="48" y="118">CosmoDz</text>
+  <text class="name" x="48" y="118">Freesialuo</text>
   <text class="pitch" x="50" y="170">Software that keeps working</text>
   <text class="pitch" x="50" y="206">when things go wrong.</text>
 </svg>

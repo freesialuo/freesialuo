@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" width="100%" alt="CosmoDz：出了问题也能继续工作的软件">
+  <img src="assets/banner-light.svg" width="100%" alt="Freesialuo：出了问题也能继续工作的软件">
 </picture>
 
 [English](README.md) · **简体中文**
 
-你好，我是 CosmoDz，北美高校的大三学生。
+你好，我是 Freesialuo，北美高校的大三学生。
 
 我做的是出了问题也必须继续工作的软件：用 Rust 和 Go 写自托管服务，用 C# 写游戏里的飞行辅助模组。
 
@@ -92,7 +92,7 @@
 </td>
 <td valign="top">
 
-命令行工具兼 Docker 服务，按计划重置 88code 上按月计费的订阅额度，支持单个或多个账号。
+命令行工具兼 Docker 服务，曾用于按计划重置 88code 上按月计费的订阅额度，支持单个或多个账号。88code 现已停止服务，仓库作为小型定时服务的样例保留。
 
 我 Star 最多的项目：18 个 Star、6 个 fork、10 个发布版本，提供可执行文件和公开的容器镜像。
 
