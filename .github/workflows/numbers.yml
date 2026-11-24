@@ -1,0 +1,35 @@
+name: Refresh activity numbers
+
+# Rewrites one line of numbers in README.md and README.zh-CN.md once a week.
+# The commit is made through the GitHub API, so GitHub signs it.
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: numbers
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Test the script
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Refresh the numbers
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          python3 scripts/refresh_numbers.py
+          --login "$GITHUB_REPOSITORY_OWNER"
+          --repo "$GITHUB_REPOSITORY"
+          --branch "$GITHUB_REF_NAME"

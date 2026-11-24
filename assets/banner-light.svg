@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">CosmoDz: software that keeps working when things go wrong</title>
+  <desc id="banner-desc">A glide path descends through five approach rings, flares, and touches down on a timeline. The rollout line underlines the name.</desc>
+  <style>
+    :root {
+      --ink: #0f1b33;
+      --pitch: #3a4660;
+      --path: #2456c7;
+      --ring: #b7791f;
+      --tick: #8a94a6;
+      --papi-white: #ffffff;
+      --papi-red: #d63a3a;
+      --papi-edge: #5b6578;
+    }
+    .name {
+      font: 700 84px "DIN Alternate", Bahnschrift, "Roboto Condensed", "Avenir Next Condensed", "Arial Narrow", Arial, sans-serif;
+      letter-spacing: -1px;
+      fill: var(--ink);
+    }
+    .pitch {
+      font: 400 29px "Avenir Next", Bahnschrift, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      fill: var(--pitch);
+    }
+    .line { fill: none; stroke-linecap: round; }
+    .future { stroke: var(--tick); stroke-width: 1.5; }
+    .rollout { stroke: var(--ink); stroke-width: 3; stroke-dasharray: 100; animation: draw 0.7s ease-out 1.8s both; }
+    .glide { stroke: var(--path); stroke-width: 2.5; stroke-dasharray: 100; animation: draw 1.8s cubic-bezier(0.35, 0.05, 0.2, 1) both; }
+    .ring { fill: none; stroke: var(--ring); stroke-width: 2; animation: appear 0.5s ease-out both; }
+    .touch { fill: var(--ring); animation: appear 0.3s ease-out 1.75s both; }
+    .papi { stroke: var(--papi-edge); stroke-width: 1.2; animation: appear 0.3s ease-out both; }
+    .white { fill: var(--papi-white); }
+    .red { fill: var(--papi-red); }
+    @keyframes draw { from { stroke-dashoffset: 100; } }
+    @keyframes appear { from { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rollout, .glide, .ring, .touch, .papi { animation: none; }
+    }
+  </style>
+
+  <!-- The timeline ahead: the part of the baseline that has not happened yet. -->
+  <path class="line future" d="M440 240H936"/>
+  <path class="line future" d="M464.8 240v6M489.6 240v6M514.4 240v6M539.2 240v6M564 240v12M588.8 240v6M613.6 240v6M638.4 240v6M663.2 240v6M688 240v12M712.8 240v6M737.6 240v6M762.4 240v6M787.2 240v6M812 240v12M836.8 240v6M861.6 240v6M886.4 240v6M911.2 240v6M936 240v12"/>
+
+  <!-- Five approach rings, tightening toward touchdown. -->
+  <ellipse class="ring" style="animation-delay: 0.15s" cx="901" cy="74.8" rx="12" ry="40" transform="rotate(-23.8 901 74.8)"/>
+  <ellipse class="ring" style="animation-delay: 0.45s" cx="843" cy="100.4" rx="10.2" ry="34" transform="rotate(-23.8 843 100.4)"/>
+  <ellipse class="ring" style="animation-delay: 0.75s" cx="785" cy="126" rx="8.4" ry="28" transform="rotate(-23.8 785 126)"/>
+  <ellipse class="ring" style="animation-delay: 1.05s" cx="727" cy="151.6" rx="6.6" ry="22" transform="rotate(-23.8 727 151.6)"/>
+  <ellipse class="ring" style="animation-delay: 1.3s" cx="669" cy="177.2" rx="4.8" ry="16" transform="rotate(-23.8 669 177.2)"/>
+
+  <!-- Glide path with a flare, then the rollout that underlines the name. -->
+  <path class="line glide" pathLength="100" d="M930 62L640 190Q527 240 440 240"/>
+  <path class="line rollout" pathLength="100" d="M440 240H48"/>
+  <circle class="touch" cx="440" cy="240" r="6"/>
+
+  <!-- PAPI lights: two white, two red means on the glide path. -->
+  <circle class="papi white" style="animation-delay: 2.1s" cx="458" cy="259" r="4"/>
+  <circle class="papi white" style="animation-delay: 2.2s" cx="472" cy="259" r="4"/>
+  <circle class="papi red" style="animation-delay: 2.3s" cx="486" cy="259" r="4"/>
+  <circle class="papi red" style="animation-delay: 2.4s" cx="500" cy="259" r="4"/>
+
+  <text class="name" x="48" y="118">CosmoDz</text>
+  <text class="pitch" x="50" y="170">Software that keeps working</text>
+  <text class="pitch" x="50" y="206">when things go wrong.</text>
+</svg>
